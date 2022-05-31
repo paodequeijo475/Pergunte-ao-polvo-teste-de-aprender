@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunte ao polvo</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 15pt Arial;
+        }
+        h1 {
+            font: normal 20pt Arial;
+        }
+            </style>
+    <img class="img" src="https://pergunteaopolvo.com.br/static/media/polvo.3253b186.webp" alt="">     
+    <h1>Escreva duas palavras nos blocos de texto para o polvo escolher</h1>  
+    <input type="text" class="Opcao1">
+    <input type="text" class="Opcao2">
+    <input type="button" value="adinhar agora"  class="botaodeativar" onclick="adivinha()">
+    <br/>
+    <div class="res">Resultado :</div>
+</head>
+<body>
+    <script>
+        function adivinha () {
+            var random = (min,max) => Math.floor(Math.random() * (max - min) + min);
+            var imagem = document.querySelector('img.img')
+            var option1 = document.querySelector('input.Opcao1')
+            var option2 = document.querySelector('input.Opcao2')
+            var res = document.querySelector('div.res')
+            var input1 = (option1.value)
+            var input2 = (option2.value)
+            var aleatoriedade = [`${input1}`,`${input2}`]
+            var escolhafinal = (aleatoriedade[random(0,aleatoriedade.length)])
+            res.innerHTML = `O polvo escolheu ${escolhafinal}`
+        }
+    </script>
+</body>
+</html>
