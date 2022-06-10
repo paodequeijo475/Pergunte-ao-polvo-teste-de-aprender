@@ -1,0 +1,36 @@
+.rodape {
+    text-align: center;
+}
+body {
+    font: normal 15pt Arial;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgb(56, 56, 56);
+    width: auto;
+    margin: 50px;
+}
+.header {
+    text-align: center;
+}
+.primeiraparte{
+    background-color: azure;
+    padding: 13px;
+    text-align: center;
+    background-color: rgb(145, 194, 236);
+}
+.imagem {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+}
+.segundaparte {
+    font: normal 18pt Arial;
+    background-color: rgb(145, 194, 236);
+    text-align: center;
+}
+input {
+    font-size: large;
+}
+button {
+    font-size: large;
+    border-radius: 5;
+}
